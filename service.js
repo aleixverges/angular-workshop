@@ -1,6 +1,6 @@
 (function(angular) {
 	angular
-		.module('TodoApp')
+		.module('app')
 		.service('TodoService', TodoService);
 
 	function TodoService() {

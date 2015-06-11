@@ -1,10 +1,11 @@
 (function(angular){
 	angular
-		.module('TodoApp', ['ngNewRouter'])
+		.module('app', ['ngNewRouter', 'app.todo', 'app.salute'])
         .controller('AppController', AppController);
 
     AppController.$routeConfig = [
-        {path: '/todo', component: 'todo'}
+        {path: '/todo', component: 'todo'},
+        {path: '/salute', component: 'salute'}
     ];
 
     function AppController() {};

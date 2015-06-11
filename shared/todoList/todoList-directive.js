@@ -1,6 +1,6 @@
 (function (angular) {
 	angular
-		.module('TodoApp')
+		.module('app')
 		.directive('taTodoList', taTodoList);
 
 		function taTodoList() {
@@ -23,6 +23,4 @@
                 }, true);
             }
 		}
-
 }(angular));
-

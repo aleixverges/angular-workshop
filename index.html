@@ -1,17 +1,17 @@
+<html ng-app="app">
+    <head>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular-new-router/dist/router.es5.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="components/todo/todo.js"></script>
+        <script type="text/javascript" src="components/salute/salute.js"></script>
+        <script type="text/javascript" src="service.js"></script>
+        <script type="text/javascript" src="shared/todoList/todoList-directive.js"></script>
+    </head>
+    <body ng-controller="AppController as ctrl">
+        <a ng-link="todo()">Todo List</a><br/>
+        <a ng-link="salute()">Salute view</a>
 
-<html ng-app="TodoApp">
-<head>
-	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-	<script type="text/javascript" src="bower_components/angular-new-router/dist/router.js"></script>
-	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="controller.js"></script>
-	<script type="text/javascript" src="service.js"></script>
-	<script type="text/javascript" src="shared/todoList/todoList-directive.js"></script>
-</head>
-<body ng-controller="TodoController as ctrl">
-	<input type="text" ng-model="ctrl.newTask" />
-	<button ng-click="ctrl.addNewTask()">Create new task</button>
-
-	<ta-todo-list list="ctrl.taskList"></ta-todo-list>
-</body>
+        <div ng-viewport></div>
+    </body>
 </html>
