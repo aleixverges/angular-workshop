@@ -3,7 +3,7 @@
         .module('app.salute', [])
         .controller('SaluteController', SaluteController);
 
-    function SaluteController(TodoService) {
+    function SaluteController() {
         var vm = this;
         vm.greeting = "Hello world!";
     }
